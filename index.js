@@ -9,15 +9,13 @@
 
 //2//
 
-//function union(arr1, arr2) {
-//     const combinedArray = arr1.concat(arr2);
-//     return combinedArray;
-// }
-  
-// const result = union([1, 2, 3], [100, 2, 1, 10]);
-  
-// console.log(result);
+function union(arr1, arr2) {
+    var resArr = arr1.concat(arr2.filter((item) => arr1.indexOf(item) < 0) )
+    return resArr;
+}
 
+console.log(union([1, 2, 3], [100, 2, 1, 10]));
+  
 
 //3//
 
